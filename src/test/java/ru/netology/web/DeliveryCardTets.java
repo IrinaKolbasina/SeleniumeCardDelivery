@@ -30,7 +30,7 @@ public class DeliveryCardTets {
         $("button.button").click();
         $(".notification__content")
                 .shouldBe(visible, Duration.ofSeconds(15))
-                .shouldHave(Condition.exactText("Встреча успешно забронирована на" + currentDate));
+                .shouldHave(Condition.exactText("Встреча успешно забронирована на " + currentDate));
     }
 
 }
